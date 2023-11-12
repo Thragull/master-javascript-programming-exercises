@@ -1,6 +1,9 @@
 function getOddElementsAtProperty(obj, key) {
     // your code here
-    
+    let array = [];
+    if ((!obj[key]) || (!Array.isArray(obj[key])) || (obj[key].length === 0)) return array;
+    array=obj[key].filter((element) => element%2 === 1);
+    return array;
 }
 
 let obj = {

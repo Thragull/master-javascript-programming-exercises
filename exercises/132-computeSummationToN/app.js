@@ -1,6 +1,8 @@
 function computeSummationToN(n) {
   // your code here
-  
+  let sum = 0;
+  for (let i=1; i<n+1; i++) sum+= i;
+  return sum;
 }
 
 let output = computeSummationToN(6);
